@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.d2a.superkontak.MainActivity">
+
+
+    <TextView
+        android:id="@+id/NamaAwal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="42dp"
+        android:text="Nama depan"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/NamaAkhir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/NamaAwal"
+        android:layout_alignStart="@+id/NamaAwal"
+        android:layout_below="@+id/NamaAwal"
+        android:layout_marginTop="37dp"
+        android:text="Nama belakang"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Telepon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/NamaAkhir"
+        android:layout_alignStart="@+id/NamaAkhir"
+        android:layout_below="@+id/NamaAkhir"
+        android:layout_marginTop="47dp"
+        android:text="Telepon"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/AEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Telepon"
+        android:layout_alignStart="@+id/Telepon"
+        android:layout_below="@+id/Telepon"
+        android:layout_marginTop="49dp"
+        android:text="Alamat Email"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/txtNamaAwal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/NamaAwal"
+        android:layout_alignBottom="@+id/NamaAwal"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtNamaAkhir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/NamaAkhir"
+        android:layout_alignBottom="@+id/NamaAkhir"
+        android:layout_alignLeft="@+id/txtNamaAwal"
+        android:layout_alignStart="@+id/txtNamaAwal"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtTelepon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Telepon"
+        android:layout_alignBottom="@+id/Telepon"
+        android:layout_alignLeft="@+id/txtNamaAkhir"
+        android:layout_alignStart="@+id/txtNamaAkhir"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtAEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/AEmail"
+        android:layout_alignBottom="@+id/AEmail"
+        android:layout_alignLeft="@+id/txtTelepon"
+        android:layout_alignStart="@+id/txtTelepon"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnTambahKontak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dp"
+        android:onClick="btnAddContact_onClick" />
+</RelativeLayout>
